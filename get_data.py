@@ -5,7 +5,7 @@ from subprocess import PIPE, Popen
 import pandas as pd
 
 url_traffic = 'https://opendata.paris.fr/api/v2/catalog/datasets/comptages-routiers-permanents/exports/json \
-        ?limit=-1&offset=0&refine=t_1h%3A{}&refine=libelle_nd_amont%3A14_Gouvion_St_Cyr&timezone=UTC'
+        ?limit=-1&offset=0&refine=t_1h%3A{}&timezone=UTC'
 
 url_roadwork = 'https://opendata.paris.fr/api/v2/catalog/datasets/chantiers-perturbants/exports/json?limit=-1&offset=0&lang=fr&timezone=UTC'
 
