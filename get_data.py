@@ -11,6 +11,7 @@ url_roadwork = 'https://opendata.paris.fr/api/v2/catalog/datasets/chantiers-pert
 
 
 def save_to_hdfs(path):
+    # TODO : not sure about this path
     hdfs_path = 'hdfs://localhost:9000/data/gp8/raw'
 
     put = Popen(["hadoop", "fs", "-put", path, hdfs_path], stdin=PIPE, bufsize=-1)
